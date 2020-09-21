@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "iconfont";
+  src: url('//at.alicdn.com/t/font_1965544_64mqdbzl7no.eot?t=1595584408886');
+  /* IE9 */
+  src: url('//at.alicdn.com/t/font_1965544_64mqdbzl7no.eot?t=1595584408886#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAMoAAsAAAAABvwAAALcAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDBgqBZIFZATYCJAMMCwgABCAFhG0HNhsfBiMRZmOPJ/tLKMd2FJqxLUkhnAwC2QADeIadRsj1xQ9cwAUeAQEf0DvgGngGFAAAAAAQD1/7vZ67uw9C6BIFqDLRSAViVSFJt8pVyArTCkUSSOj/92vrLbuo/8YQiks2jfj5dNzSiYcEFxqUYJbOwCEHLaaLJlTAXABszvXARkWokdz5zT/5QrJxemn60AP/oyGzQc//j/upvwY0kHxAc6ru80jACQ40KqiFN5AJ+oaxmwge4GYC3SYtie3m+AKaAvQKxIvh8V20gkdRnHgr1A0TC8R71qZh+sQ7/v34uxw0kFQZwMAzj3YecP1AP9S50WlAKIK7nAnONDKWUIhbjZErcOGQs24J0Z1eK0Jayt+Jc2JRDf/wSIKoAeT2gjkjmviBMCeTqnXeU2+UQY2CVVwFFKNTr01jGOLF3OWeGpOx9OriefzVlFy+SCQvIxHmxodA5S2Hc3y9H22D21ZstUssDuOdb9eKLrejfXjf/o8/Pw8RHw2azXK5jwAVRkO+XCAP6sNrd19VY7FmskvZlOWizjI1P3+xT9CgebHuKzZmL47Pe26aoZbJtde8zBXEQhBeHqSAyZSkcnpltb/8m+kV30mu7VotkwD44lq+cVfnFWFYNmglBnP/KXdgTYn5QJtLyMGc1JbNTTQldJZr1wEcw75PV4zddyy0xjJIGhOQtabQQlqCSo8VqLXWoNuivek9RryEi0IHFrzVIAz6AEm/j5AN+owW0jeojPsPtcHAodulEC7YYybeDTcEjaIH+4fB8UpIrzeRf8cuzUbyfE55o8TBD2VWlOMtrihLDImfrlIlIOEFGm07nGeGIDyi06xXDXWeU9ONMsfL5rZB0Ch6sH8YHK9Em+ut8vk7dmk20lEwYn6jxKF1KLNiANpK1kEFj3JN/HSVKgEJL9BoJpxhhCE0txvRadZPCIU6NxrRUEm2vWz5gWynBLCaLQnDMQKkHE7jFBNvNg==') format('woff2'), url('//at.alicdn.com/t/font_1965544_64mqdbzl7no.woff?t=1595584408886') format('woff'), url('//at.alicdn.com/t/font_1965544_64mqdbzl7no.ttf?t=1595584408886') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */ url('//at.alicdn.com/t/font_1965544_64mqdbzl7no.svg?t=1595584408886#iconfont') format('svg');
+  /* iOS 4.1- */
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-top:before {
+  content: "\e631";
+}
+.icon-sousuo:before {
+  content: "\e618";
+}
+.search-header {
+  padding: 20rpx 16rpx;
+  background-color: #ff2d4a;
+}
+.search-header .search {
+  height: 60rpx;
+  line-height: 60rpx;
+  background-color: #fff;
+  border-radius: 10rpx;
+  color: #bbb;
+  display: flex;
+  justify-content: center;
+  font-size: 24rpx;
+}
+.search-header .search .iconfont {
+  width: 32rpx;
+  height: 32rpx;
+  margin-right: 16rpx;
+}

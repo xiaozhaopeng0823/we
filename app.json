@@ -1,0 +1,49 @@
+{
+  "tabBar": {
+    "color": "#707070",
+    "selectedColor": "#ff2d4a",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "/assets/images/icon-home.png",
+        "selectedIconPath": "/assets/images/icon-home-active.png"
+      },
+      {
+        "pagePath": "pages/category/category",
+        "text": "分类",
+        "iconPath": "/assets/images/icon-category.png",
+        "selectedIconPath": "/assets/images/icon-category-active.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车",
+        "iconPath": "/assets/images/icon-cart.png",
+        "selectedIconPath": "/assets/images/icon-cart-active.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "首页",
+        "iconPath": "/assets/images/icon-user.png",
+        "selectedIconPath": "/assets/images/icon-user-active.png"
+      }
+    ]
+  },
+  "pages":[
+    "pages/home/home",
+    "pages/category/category",
+    "pages/cart/cart",
+    "pages/user/user",
+    "pages/list/list",
+    "pages/detail/detail",
+    "pages/pay/pay",
+    "pages/auth/auth"
+  ],
+  "window":{
+    "navigationBarBackgroundColor": "#ff2d4a",
+    "navigationBarTitleText": "theMall",
+    "navigationBarTextStyle":"white"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

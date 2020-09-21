@@ -1,0 +1,22 @@
+// 小程序组件有独立的样式作用域, 如果希望字体图标能够使用
+// 需要单独引入
+@import '../../styles/iconfont.wxss';
+.search-header{
+  padding: 20rpx 16rpx;
+  background-color: #ff2d4a;
+  .search{
+    height: 60rpx;
+    line-height: 60rpx;
+    background-color: #fff;
+    border-radius: 10rpx;
+    color: #bbb;
+    display: flex;
+    justify-content: center;
+    font-size: 24rpx;
+    .iconfont{
+      width: 32rpx;
+      height: 32rpx;
+      margin-right: 16rpx;
+    }
+  }
+}

@@ -1,0 +1,63 @@
+.list {
+  height: calc(100vh - 100rpx);
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+}
+.list .list-left {
+  flex: 2;
+}
+.list .list-left view {
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  border-left: 3px solid transparent;
+  background-color: #f4f4f4;
+  border-bottom: 1px solid #dedede;
+}
+.list .list-left .active {
+  background-color: #fff;
+  border-left: 3px solid var(--themeColor);
+}
+.list .list-right {
+  margin-top: 10rpx;
+  margin-left: 10rpx;
+  flex: 5;
+  background-color: #fff;
+}
+.list .list-right .banner image {
+  height: 180rpx;
+  width: 100%;
+}
+.list .list-right .content .title {
+  width: 100%;
+  height: 60rpx;
+  text-align: center;
+}
+.list .list-right .content .title text {
+  line-height: 60rpx;
+}
+.list .list-right .content .title text.line {
+  color: #d5d5d5;
+}
+.list .list-right .content .item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.list .list-right .content .item .item-pro {
+  display: flex;
+  width: 33.3%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20rpx;
+}
+.list .list-right .content .item .item-pro image {
+  height: 90rpx;
+  width: 90rpx;
+}
+.list .list-right .content .item .item-pro text {
+  margin-top: 10rpx;
+  font-size: 28rpx;
+}

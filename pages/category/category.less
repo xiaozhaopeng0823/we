@@ -1,0 +1,69 @@
+.list{
+  height: calc(100vh - 100rpx);
+  width: 100%;
+  background-color:#fff;
+  display: flex;
+  // 左边盒子
+  .list-left{
+    flex: 2;
+    view{
+      height: 80rpx;
+      line-height: 80rpx;
+      text-align: center;
+      border-left: 3px solid transparent;
+      background-color: #f4f4f4;
+      border-bottom: 1px solid #dedede;
+    }
+    .active{
+      background-color: #fff;
+      border-left: 3px solid var(--themeColor);
+    }
+  }
+  // 右边盒子
+  .list-right{
+    margin-top: 10rpx;
+    margin-left: 10rpx;
+    flex: 5;
+    background-color: #fff;
+    .banner{
+      image{
+        height: 180rpx;
+        width: 100%;
+      }
+    }
+    .content {
+      .title{
+        width: 100%;
+        height: 60rpx;
+        text-align: center;
+        text{
+          line-height: 60rpx;
+          &.line{
+            color: #d5d5d5;
+          }
+        }
+      }
+      .item{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        .item-pro{
+          display: flex;
+          width: 33.3%;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 20rpx;
+          image{
+            height: 90rpx;
+            width: 90rpx;
+          }
+          text{
+            margin-top: 10rpx;
+            font-size: 28rpx;
+          }
+        }
+      }
+    }
+  }
+}

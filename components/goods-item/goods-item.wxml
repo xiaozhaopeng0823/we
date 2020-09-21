@@ -1,0 +1,13 @@
+<!-- 商品组件的结构 -->
+<navigator class="goods" open-type="navigate" url="/pages/detail/detail?goods_id={{goods.goods_id}}">
+  <view class="left">
+    <image src="{{goods.goods_small_logo || 'https://ww1.sinaimg.cn/large/007rAy9hgy1g24by9t530j30i20i2glm.jpg'}}"></image>
+  </view>
+  <view class="right">
+    <view class="top">{{goods.goods_name}}</view>
+    <view class="bottom">
+      <text>￥</text>
+      <text class="price">{{goods.goods_price}}</text>
+    </view>
+  </view>
+</navigator>

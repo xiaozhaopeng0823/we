@@ -1,0 +1,42 @@
+<view class="cates">
+  <!-- 搜索框 -->
+  <search-header></search-header>
+  <view class="list">
+      <!-- 左盒子 -->
+    <scroll-view class="list-left" scroll-y>
+      <view
+       wx:for="{{ CategoriesList }}" 
+       wx:key="cat_id" 
+       data-id="{{item.cat_id}}"
+       data-index="{{index}}"
+       bindtap="changFn"
+       class="{{ clickId === item.cat_id ? 'active' : '' }}" 
+       >{{item.cat_name}}</view> 
+    </scroll-view>
+      <!-- 右盒子 -->
+    <scroll-view class="list-right" scroll-y>
+      <view class="banner">
+        <image src="/assets/upload/category_banner@2x.png"></image>
+      </view>
+      <view class="content" wx:for="{{categorieFirst}}" wx:key="cat_id">
+        <view class="title">
+          <text decode class='line'>/&emsp;</text>
+          <text >{{item.cat_name}}</text>
+          <text decode class='line'>&emsp;/</text>
+        </view>
+        <view class="item">
+          <navigator class="item-pro" 
+          open-type="navigate"
+          url="/pages/list/list?id={{value.cat_id}}&title={{value.cat_name}}"
+          wx:for="{{item.children}}" 
+          wx:key="cat_id" 
+          wx:for-item="value">
+          <!-- wx:for-item和wx:for-index是用来给item和index取别名 -->
+            <image src="{{value.cat_icon}}"></image>
+            <text>{{value.cat_name}}</text>
+          </navigator>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+</view>

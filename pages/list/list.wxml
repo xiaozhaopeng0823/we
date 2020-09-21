@@ -1,0 +1,15 @@
+<!-- 头部搜索框 -->
+<search-header></search-header>
+<!-- tabs栏 -->
+<tabs tabs="{{tabs}}" bindchange="changeFn"></tabs>
+
+<!-- 底部商品详情 -->
+<view wx:if="{{tabs[0].isActive}}">
+  <goods-item wx:for="{{goodsList}}" wx:key="goods_id" goods="{{item}}"></goods-item>
+</view>
+<view class="nomore" wx:if="{{!hasMore}}">亲,没有更多数据了哟</view>
+
+
+
+<view wx:if="{{tabs[1].isActive}}">销量</view>
+<view wx:if="{{tabs[2].isActive}}">价格</view>

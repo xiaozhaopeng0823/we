@@ -1,0 +1,7 @@
+.nomore {
+  height: 100rpx;
+  width: 100%;
+  background-color: #f4f4f4;
+  text-align: center;
+  line-height: 100rpx;
+}

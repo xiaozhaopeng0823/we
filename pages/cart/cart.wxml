@@ -1,0 +1,57 @@
+<!-- 收货地址部分 -->
+<view class="address">
+  <!-- 1. 没有地址情况 -->
+  <view class="address1" wx:if="{{!address.userName}}" bindtap="chooseAddressBtn">
+    <button type="primary">点击获取收货地址</button>
+  </view>
+
+  <!-- 2. 有地址的情况 -->
+  <view class="address2" wx:else bindtap="chooseAddressBtn">
+    <view class="address2-top">
+      <text>{{address.userName}}</text>
+      <text>{{address.telNumber}}</text>
+    </view>
+    <view class="address2-bottom">{{address.fullAddress}}</view>
+  </view>
+</view>
+
+<!-- 购物车标题 -->
+<view class="cart-title">购物车</view>
+<!-- 购物车元素列表 -->
+<view class="cart" wx:for="{{cart}}" wx:key="goods_id">
+  <view class="cart1">
+    <checkbox-group bindchange="change" data-id="{{item.goods_id}}">
+      <checkbox checked="{{item.isChecked}}"></checkbox>
+    </checkbox-group>
+  </view>
+  <view class="cart2">
+    <image mode="widthFix" src="{{item.goods_small_logo}}"></image>
+  </view>
+  <view class="cart3">
+    <view class="cart3-top line2">{{item.goods_name}}</view>
+    <view class="cart3-bottom">
+      <view class="price">¥ {{item.goods_price}}</view>
+      <view class="edit">
+        <view class="calc" bindtap="changeNum" data-num="{{ -1 }}" data-id="{{item.goods_id}}">-</view>
+        <view class="num">{{item.num}}</view>
+        <view class="calc" bindtap="changeNum" data-num="{{ 1 }}" data-id="{{item.goods_id}}">+</view>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 底部工具 -->
+<view class="tool">
+  <view class="tool1">
+    <checkbox-group bindchange="changeAll">
+      <checkbox checked="{{checkedAll}}">全选</checkbox>
+    </checkbox-group>
+  </view>
+  <view class="tool2">
+    <view class="tool2-top">
+      合计:
+      <text>¥ {{totalPrice}}</text>
+    </view>
+    <view class="tool2-bottom">包含运费</view>
+  </view>
+  <view class="tool3" bindtap="gotoPay">结算({{totalNum}})</view>
+</view>
